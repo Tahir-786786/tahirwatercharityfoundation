@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect With Us - Tahir Charity Foundation</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .contactpic.png {
+            width: 50px; 
+            height: 100px;
+            position: absolute; 
+            top: 20px; 
+            right: 50px;
+         }
+        .header {
+            background-color: #ff9900;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .contact-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+       
+        h1, h2, .footer p {
+            font-weight: bold;
+        }
+        .slogan {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        .social-icons {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        .social-icons li {
+            display: inline;
+            margin-right: 10px;
+        }
+        .social-icons li:last-child {
+            margin-right: 0;
+        }
+        .social-icons li a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: dodgerblue;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            text-decoration: none;
+        }
+        .footer-logo {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .footer-logo:last-child {
+            margin-right: 0;
+        }
+        .contact-form input[type="text"], 
+        .contact-form input[type="email"], 
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #e68a00;
+        }
+        .success-message {
+            color: green;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+        .navigation {
+            background-color: #ADFE2F;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .navigation a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+        .navigation a:hover {
+            background-color: #e68a00;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <a href="Home.html">Home</a>
+        <a href="Login.html">Login</a>
+        <a href="Signup.html">Sign Up</a>
+        <a href="Donation.html">Donate</a>
+        <a href="Objective.html">Objective</a>
+        <a href="Contactus.html">Contact Us</a>
+        <a href="Aboutus.html">About Us</a>
+    </div>
+    <div class="header">
+        <h1>Tahir Water Charity Foundation</h1>
+        <P><b>You can make a difference today by donating, fundraising, or volunteering with us. Together, we can continue to change lives and build a brighter future for World .</b></p>
+        <p><b>Join our community and stay updated on our projects, events, and success stories. Follow us on social media and sign up for our newsletter to be part of our journey towards a world where everyone has access to clean water. </b></p>
+    </div>
+    <div class="container">
+        <img src="contactpic.png" alt="inmge" class="contact">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required><br>
+                <input type="email" name="email" placeholder="Your Email" required><br>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br>
+                <input type="submit" value="Send Message">
+            </form>
+            <div class="success-message" id="successMessage" style="display: none;">Thanks for contacting us! Our team will reach out to you soon.</div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul class="social-icons">
+            <li><a href="https://www.facebook.com/profile.php?id=100007391388528" target="_blank"><img src="facelogo.jpg" alt="Facebook" class="footer-logo"></a></li>
+            <li><a href="https://www.instagram.com/494mdtahir?igsh=M3dkcXByNGl6M292" target="_blank"><img src="iglogo.jpg" alt="Instagram" class="footer-logo"></a></li>
+        </ul>
+    </div>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event){
+            event.preventDefault();
+            document.getElementById("successMessage").style.display = "block";
+            document.getElementById("contactForm").reset();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Tahir Water Charity Foundation</title>
+    <style>
+        p {
+            color: white;
+        }
+        h2{
+            color: white;
+        }
+        body{
+              background-image: url('donation image.png');
+              background-repeat: no-repeat;
+              background-attachment: fixed;  
+              background-size: cover;
+        }
+        .header {
+            background-color: orange;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .main-content {
+            margin-top: 20px;
+            text-align: justify;
+        }
+        .donation-form {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .footer {
+            background-color: DarkSlateGray;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+       
+        h1, h2, .footer p {
+            font-weight: bold;
+        }
+        .navigation {
+            background-color: greenyellow;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .navigation a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+        .navigation a:hover {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <a href="Home.html">Home</a>
+        <a href="Login.html">Login</a>
+        <a href="Signup.html">Sign Up</a>
+        <a href="Donation.Html">Donate</a>
+        <a href="OBJECTIVE.Html">Objective</a>
+        <a href="Contactus.html">Contact Us</a>
+        <a href="Aboutus.html">About Us</a>
+    </div>
+    <div class="header">
+        <h1>Make a Donation</h1>
+        <p><b>GLOBALLY, 785 MILLION PEOPLE LACK ACCESS TO CLEAN WATER</b></p>
+        <p> Help us by giving fresh, clean water charity to everyone; donate today to save countless lives through our Water Charity Foundation.</p>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <p><b>Your donation can make a difference in the lives of those in need.</b></p>
+            <div class="donation-form">
+                <h2>Donate Now</h2>
+                <p><b> Your support is crucial in our mission to provide clean water to World.Every donation, no matter how small, makes a meaningful impact on the lives of those in need. Join us in bringing hope and healing through the power of clean water. Together, we can make a difference in World and beyond.</b></p>
+                <form action="#" method="post">
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" name="amount" min="1" required><br><br>
+                    <label for="payment-method">Select Payment Method:</label>
+                    <select id="payment-method" name="payment-method">
+                        <option value="credit-card">Credit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="bank-transfer">Bank Transfer</option>
+                    </select><br><br>
+                    <button type="submit" onclick="showConfirmation()">Donate Now</button>
+                </form>
+                <p id="confirmation-message" style="display: none; color: green;"> Thank you for your generosity!</p>
+            
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Contact us at: tahirwatercharityfoundation@gmail.com | Phone: +447392726529</p>
+    </div>
+
+    <script>
+        function showConfirmation() {
+            document.getElementById("confirmation-message").style.display = "block";
+        }
+    </script>
+</body>
+</html>
